@@ -1,0 +1,14 @@
+2020-01-06 11:54:01,905 INFO [root] [__init__.py(<module>:5)] - TEST日志器能不能正常工作
+2020-01-06 11:54:02,168 INFO [root] [hr_login.py(test_login:28)] - 登录成功接口返回数据为:{'code': 10000, 'data': 'fecf81ef-a33b-4c4b-99d7-e34e06396b4e', 'message': '操作成功！', 'success': True}
+2020-01-06 11:54:02,168 INFO [root] [hr_login.py(test_login:33)] - 保存的令牌是:{'Authorization': 'Bearer fecf81ef-a33b-4c4b-99d7-e34e06396b4e', 'Content-Type': 'application/json'}
+2020-01-06 11:54:02,245 INFO [root] [hr_test_emp.py(test01_add_emp:32)] - 添加员工接口返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:02,313 INFO [root] [hr_test_emp.py(test02_query_emp:42)] - 查询员工接口的返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:02,579 INFO [root] [hr_test_emp.py(test03_modify_emp:49)] - 修改员工接口的返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:02,647 INFO [root] [hr_test_emp.py(test04_delete_emp:56)] - 删除员工接口的返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:54,138 INFO [root] [__init__.py(<module>:5)] - TEST日志器能不能正常工作
+2020-01-06 11:54:54,405 INFO [root] [hr_login.py(test_login:28)] - 登录成功接口返回数据为:{'code': 10000, 'data': '169dbedf-9db1-4037-a69a-733ff44446a2', 'message': '操作成功！', 'success': True}
+2020-01-06 11:54:54,406 INFO [root] [hr_login.py(test_login:33)] - 保存的令牌是:{'Authorization': 'Bearer 169dbedf-9db1-4037-a69a-733ff44446a2', 'Content-Type': 'application/json'}
+2020-01-06 11:54:54,484 INFO [root] [hr_test_emp.py(test01_add_emp:32)] - 添加员工接口返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:54,556 INFO [root] [hr_test_emp.py(test02_query_emp:42)] - 查询员工接口的返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:54,628 INFO [root] [hr_test_emp.py(test03_modify_emp:49)] - 修改员工接口的返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
+2020-01-06 11:54:54,698 INFO [root] [hr_test_emp.py(test04_delete_emp:56)] - 删除员工接口的返回数据为:{'code': 99999, 'data': None, 'message': '抱歉，系统繁忙，请稍后重试！', 'success': False}
