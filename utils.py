@@ -88,13 +88,14 @@ def read_delete_emp_data():
     return result_list
 
 class DBUtils:
-    def __init__(self,host="182.92.81.159",user="readuser",password="iHRM_user_2019",database="ihrm"):
+    def __init__(self,host="182.92.81.159",user="readuser",password="iHRM_user_2019",database="ihrm",charset="utf8"):
         self.host = host
         self.user = user
         self.password = password
         self.database = database
+        self.charset = charset
     def __enter__(self):
-        self.conn = pymysql.connect(self.host,self.user,self.password,self.database)
+        self.conn = pymysql.connect(self.host,self.user,self.password,self.database,charset=self.charset)
         self.curor = self.conn.cursor()
         return self.curor
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -113,4 +114,9 @@ if __name__ == '__main__':
     # read_query_emp_data()
     # read_modify_emp_data()
     read_delete_emp_data()
-
+    with DBUtils() as db_utils:
+        sql = "select username from bs_user limit 1"
+        db_utils.execute(sql)
+        result = db_utils.fetchone()[0]
+        print(result)
+        print("hello")
