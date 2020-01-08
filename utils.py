@@ -110,13 +110,13 @@ class DBUtils:
 
 if __name__ == '__main__':
     # read_login_daa()
-    # read_add_emp_data()
+    read_add_emp_data()
     # read_query_emp_data()
     # read_modify_emp_data()
-    read_delete_emp_data()
-    with DBUtils() as db_utils:
-        sql = "select username from bs_user limit 1"
-        db_utils.execute(sql)
-        result = db_utils.fetchone()[0]
-        print(result)
-        print("hell7o")
+    # read_delete_emp_data()
+    # with DBUtils() as db_utils:
+    #     sql = "select username from bs_user limit 1"
+    #     db_utils.execute(sql)
+    #     result = db_utils.fetchone()[0]
+    #     print(result)
+    #     print("hell7o")

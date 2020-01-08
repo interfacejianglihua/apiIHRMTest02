@@ -1,3 +1,0 @@
-2020-01-07 11:40:06,301 INFO [root] [__init__.py(<module>:5)] - TEST日志器能不能正常工作
-2020-01-07 11:40:06,754 INFO [root] [hr_login.py(test_login:24)] - 登录成功接口返回数据为:{'code': 10000, 'data': '68cb7e44-0f4f-490e-b514-bb0fd38eff41', 'success': True, 'message': '操作成功！'}
-2020-01-07 11:40:06,754 INFO [root] [hr_login.py(test_login:29)] - 保存的令牌是:{'Authorization': 'Bearer 68cb7e44-0f4f-490e-b514-bb0fd38eff41', 'Content-Type': 'application/json'}

@@ -25,9 +25,9 @@ class TestEmp(unittest.TestCase):
         pass
 
     @parameterized.expand(read_add_emp_data)
-    def test01_add_emp(self, mobile, password, http_code, success, code, message):
+    def test01_add_emp(self, username,mobile,success,code,message,http_code):
         # 调用添加员工接口
-        response = self.emp_api.add_emp(mobile, password)
+        response = self.emp_api.add_emp(username, mobile)
         jsonData = response.json()
         logging.info("添加员工接口返回数据为:{}".format(jsonData))
         # 获取员工ID保存全局变量
