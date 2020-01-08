@@ -1,12 +1,8 @@
 import unittest
 import logging
-
-
 from api.login_api import LoginApi
 from app import HEADERS
 from utils import asser_common
-
-
 class Login(unittest.TestCase):
     def setUp(self):
         pass

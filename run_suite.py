@@ -13,7 +13,8 @@ suite.addTest(unittest.makeSuite(Login)) #导入登录员工和员工管理
 suite.addTest(unittest.makeSuite(TestEmp))
 # suite.addTest(unittest.makeSuite(TestIHRMLogin))
 
-report_path = BASE_DIR + "/report/ihrm{}.html".format(time.strftime("%Y%m%d_%H%M%S"))
+#report_path = BASE_DIR + "/report/ihrm{}.html".format(time.strftime("%Y%m%d_%H%M%S"))
+report_path = BASE_DIR + "/report/ihrm.html"
 
 with open(report_path,"wb") as f:
     runner = HTMLTestRunner(f,verbosity=1,title="自动化接口测试",description="v1.0")
